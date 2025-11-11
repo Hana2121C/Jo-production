@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <style >
+        nav {
+      background-color: #333; /* Dark background */
+      display: flex;
+      justify-content:space-around;
+      gap: 100px;
+      padding: 0px 0px;
+      position: sticky;
+      top: 0;
+      
+     
+  
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: end;
+      
+      
+    }
+
+    nav ul li {
+      margin: 0 10spx;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      text-align:end;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      margin-left: 50px;
+      
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4; /* Highlight color on hover */
+    }
+    #active {
+      color: #cf8d40; /* Highlight color on hover */
+    }
+* { 
+  box-sizing: border-box; 
+} 
+ 
+ .gallery
+  { 
+    display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;
+   } 
+ .gallery-item
+  { 
+    flex: 1 1 calc(25% - 40px); /* 4 per row, adjust based on screen */ max-width: 250px; 
+    text-align: center; background: #f9f9f9; padding: 10px;
+     border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+    } 
+ .gallery-item img 
+ { 
+  width: 100%; height: auto; border-radius: 8px;
+ } 
+ .caption
+  { 
+    margin-top: 8px; font-size: 14px; color: #333; 
+  } /* Responsive behavior */
+  @media (max-width: 800px)
+   { .gallery-item { flex: 1 1 calc(50% - 40px); } }
+   @media (max-width: 500px) { .gallery-item { flex: 1 1 100%; } 
+} 
+
+.svg-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-frame svg {
+  position: absolute;
+  transition: .5s;
+  z-index: calc(1 - (0.2 * var(--j)));
+  transform-origin: center;
+  width: 344px;
+  height: 344px;
+  fill: none;
+}
+
+.svg-frame:hover svg {
+  transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+}
+
+.svg-frame svg #center {
+  transition: .5s;
+  transform-origin: center;
+}
+
+.svg-frame:hover svg #center {
+  transform: rotate(-30deg) translateX(45px) translateY(-3px);
+}
+
+#out2 {
+  animation: rotate16 7s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#out3 {
+  animation: rotate16 3s ease-in-out infinite alternate;
+  transform-origin: center;
+  stroke: #ff0;
+}
+body { 
+  font-family: Arial, sans-serif; margin: 0; padding: 0px; 
+  background: #fff; background-image:url("camera 3.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+ } 
+  
+       #welcom{
+            background-color:rgba(251, 249, 249, 0.5);
+            color: black;
+            border: #f9f9f9;
+            border-radius: 50x;
+            border-color: #322222;
+            border-style: solid;
+            border-width: 1px;
+            font-family:fantasy;
+            padding: 15px;
+
+
+        }
+ .hero {
+      text-align: right;
+      padding: 100px 20px 60px;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    button {
+  outline: none;
+  color: #DAA06D;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: 2px dashed #DAA06D;
+  border-radius: 10px;
+  background-color: #EADDCA;
+  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  transition: .1s ease-in-out, .4s color;
+  
+    }
+     button a {
+      text-decoration: none;
+      color: rgb(14, 1, 1);
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: aliceblue;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: 100;
+    }
+ .services {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: none;
+      color: #f9f9f9;
+    }
+
+    .services h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-family:'Times New Roman', Times, serif;
+    }
+
+    .services ul {
+      list-style: circle;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      text-align: left;
+      font-size: 1.2em;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .services li {
+      margin-bottom: 10px;
+    }
+  
+
+    .socials {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .socials a {
+      color: #ffcc00;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+
+
+    </style>
+<head>
+   
+    <title>Jhone Production</title>
+</head>
+<body
+>
+ <nav>
+    <ul>
+      
+     <li> <a href="index.html"id="active" >Home</a></li>
+      <li><a href="About us.html">About us</a><br>
+      <li><a href="Gallary.html">Gallery</a></li><br>
+      
+      <li><a href="contact.html">Contact</a><br>
+    </ul>
+  </nav>
+  
+<div class="hero" id="home">
+    <h1>Welcome to JO PHOTO & VIDEO</h1>
+    <p>Make all your events memorable — the best way to preserve your memories</p>
+    
+    <button><a href="contact.html">Book Now</a></button>
+  </div>
+    <div class="services" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Birthday</li>
+      <li>Wedding</li>
+      <li>Graduation</li>
+      <li>Documentary</li>
+    </ul>
+  </div>
+
+  <div class="socials">
+    <a href="https://www.instagram.com/jo_photo_video_production/profilecard/?igsh=djhjbzdmN3ZzOHJt">Instagram</a> |
+    <a href="https://www.facebook.com/61555826663957/posts/582186780914414/?substory_index=582186780914414&mibextid=rS40aB7S9Ucbxw6v">Facebook</a> |
+    <a href="https://www.youtube.com/@jhonyiheyis">YouTube</a>|
+    <a href="#">tiktok</tiktok></a>
+  </div>
+
+   
+
+     <footer style="color: azure; text-align: end;">© 2025 JO PHOTO & Video</footer>
+
+</body>
+</html>

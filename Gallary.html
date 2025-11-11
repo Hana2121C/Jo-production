@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <style>   nav {
+      background-color: #333; /* Dark background */
+      padding: 10px 20px;
+    }
+
+     nav {
+      background-color: #333; /* Dark background */
+      display: flex;
+      justify-content:space-around;
+      gap: 100px;
+      padding: 0px 0px;
+      position: sticky;
+      top: 0;
+      
+     
+  
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: end;
+      
+      
+    }
+
+    nav ul li {
+      margin: 0 10spx;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      text-align:end;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      margin-left: 50px;
+      
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4; /* Highlight color on hover */
+    }
+    #active {
+      color: #cf8d40; /* Highlight color on hover */
+    }
+* { 
+  box-sizing: border-box; 
+} 
+ body { 
+  font-family: Arial, sans-serif; margin: 0; padding: 0px; 
+  background: #fff; background-image:url("photo/camera\ 3.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+ } 
+ .gallery
+  { 
+    display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;
+   } 
+ .gallery-item
+  { 
+    flex: 1 1 calc(25% - 40px); /* 4 per row, adjust based on screen */ max-width: 250px; 
+    text-align: center; background: #f9f9f9; padding: 10px;
+     border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+    } 
+ .gallery-item img 
+ { 
+  width: 100%; height: auto; border-radius: 8px;
+ } 
+ .caption
+  { 
+    margin-top: 8px; font-size: 14px; color: #333; 
+  } /* Responsive behavior */
+  @media (max-width: 800px)
+   { .gallery-item { flex: 1 1 calc(50% - 40px); } }
+   @media (max-width: 500px) { .gallery-item { flex: 1 1 100%; } 
+} 
+
+
+
+
+    </style>
+<head>
+    
+    <title>Jhone
+         Production</title>
+</head>
+<body>
+      <nav>
+    <ul>
+    <li> <a href="index.html" >Home</a></li>
+      <li><a href="About us.html">About us</a><br>
+      <li><a href="Gallary.html"id="active">Gallery</a></li><br>
+       <li><a href="contact.html">Contact</a><br>
+      
+    </ul>
+  </nav><br><br><br>
+
+  <div class="gallery">
+  <div class="gallery-item">
+    <a target="_blank" href="ba 1.jpg">
+      <img src="ba 1.jpg" alt="widding" width="600" height="400">
+    </a>
+    <div class="caption">widding
+  </div>
+</div>
+
+
+<div class="gallery">
+  <div class="gallery-item">
+    <a target="_blank" href="ma1.jpg">
+      <img src="ma1.jpg" alt="ModernWidding" width="600" height="400">
+   </a>
+    <div class="caption">widding</div>
+  </div>
+</div>
+
+
+<div class="gallery">
+  <div class="gallery-item">
+    <a target="_blank" href="ede 1.jpg">
+      <img src="ede 1.jpg" alt="Birthday" width="600" height="400">
+    </a>
+    <div class="caption">Baptism</div>
+  </div>
+</div>
+
+
+<div class="gallery">
+  <div class="gallery-item">
+    <a target="_blank" href="yab 1.jpg">
+      <img src="yab 1.jpg" alt="Birthday" width="600" height="400">
+    </a>
+    <div class="caption">Baptism</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
